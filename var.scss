@@ -1,0 +1,14 @@
+$--colors: (
+  'primary': (
+    'base': green,
+  ),
+  'success': (
+    'base': #21ba45,
+  ),
+);
+
+@use 'sass:map';
+
+p {
+  color: map.get(map.get($--colors, 'primary'), 'base');
+}
