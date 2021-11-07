@@ -1,0 +1,17 @@
+// @use './corners.scss';
+// .button {
+//   @include corners.rounded;
+//   padding: 5px + corners.$radius;
+// }
+
+// @use './corners.scss' as c;
+// .button {
+//   @include c.rounded;
+//   padding: 5px + c.$radius;
+// }
+
+@use './corners.scss' as *;
+.button {
+  @include rounded;
+  padding: 5px + $radius;
+}
