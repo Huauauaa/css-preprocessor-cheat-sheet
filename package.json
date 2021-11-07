@@ -1,0 +1,13 @@
+{
+  "name": "scss_cheat_sheet",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "pnpm run dev",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  }
+}
