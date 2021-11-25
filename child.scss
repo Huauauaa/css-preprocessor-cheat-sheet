@@ -1,0 +1,15 @@
+.parent {
+  color: black;
+
+  :last-child {
+    color: red;
+  }
+
+  &:last-child {
+    color: green;
+  }
+
+  & > :last-child {
+    color: blue;
+  }
+}
