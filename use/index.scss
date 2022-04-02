@@ -1,0 +1,12 @@
+@use 'corners';
+
+.button {
+  @include corners.rounded;
+  padding: 5px + corners.$radius;
+
+  // Error: Undefined variable.
+  // border: $radius
+
+  //  Private members can't be accessed from outside their modules.
+  // color: corners.$-color;
+}

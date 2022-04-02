@@ -1,0 +1,7 @@
+// 使用 as *，那么这一模块就处于全局命名空间。
+@use 'corners' as *;
+
+.button {
+  @include rounded;
+  padding: 5px + $radius;
+}

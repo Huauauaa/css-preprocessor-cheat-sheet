@@ -1,0 +1,7 @@
+p {
+  &:after {
+    content: quote(这是里面的内容);
+  }
+  background-color: unquote($string: '#F00');
+  z-index: str-length('scss学习');
+}

@@ -1,0 +1,20 @@
+$font-sizes: (
+  'small': 12px,
+  'normal': 18px,
+  'large': 24px,
+);
+$padding: (
+  top: 10px,
+  right: 20px,
+  bottom: 10px,
+  left: 30px,
+);
+p {
+  font-size: map-get($font-sizes, 'normal'); //18px
+  @if map-has-key($padding, 'right') {
+    padding-right: map-get($padding, 'right');
+  }
+  &:after {
+    content: map-keys($font-sizes) + ' ' + map-values($padding) + '';
+  }
+}

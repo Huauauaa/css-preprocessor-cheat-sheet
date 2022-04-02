@@ -1,0 +1,16 @@
+@use 'sass:selector';
+
+@debug selector.is-superselector('a', 'a'); // true
+
+// 可以直接使用@forward下的前缀
+@debug selector-append('a', '.disabled'); // a.disabled
+@debug selector-extend(
+  'a.disabled',
+  'a',
+  '.link'
+); // a.disabled, .link.disabled
+
+.header {
+  content: selector-append('.a', '.b', '.c') + '';
+  content: selector-unify('a', '.disabled') + '';
+}

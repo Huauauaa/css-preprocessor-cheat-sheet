@@ -1,0 +1,18 @@
+// 占位符选择器
+
+/*
+占位符选择器%，与常用的id 与 class选择器写法相似，只是 # 或 . 替换成了%，占位符选择器必须通过 @extend 指令调用
+*/
+
+.button %base {
+  font-size: 14px;
+}
+
+.primary {
+  @extend %base;
+  background-color: lightblue;
+}
+.danger {
+  @extend %base;
+  background-color: pink;
+}

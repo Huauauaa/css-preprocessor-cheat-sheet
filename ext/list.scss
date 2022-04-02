@@ -1,0 +1,13 @@
+@use 'sass:list';
+p {
+  color: nth($list: red blue green, $n: 2); // blue
+  color: list.nth($list: red blue green, $n: 2); // blue
+}
+
+.p1 {
+  z-index: length(12px); //1
+  z-index: length(12px 5px 8px); //3
+  z-index: index(a b c d, c); //3
+  padding: append(10px 20px, 30px); // 10px 20px 30px
+  color: nth($list: red blue green, $n: 2); // blue
+}

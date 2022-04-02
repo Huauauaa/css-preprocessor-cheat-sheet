@@ -1,0 +1,7 @@
+$radius: 3px;
+// 使用scss可以轻松地定义私有成员，私有成员命名以-或开头。
+$-color: red;
+
+@mixin rounded {
+    border-radius: $radius;
+}

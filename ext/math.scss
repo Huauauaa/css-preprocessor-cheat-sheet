@@ -1,0 +1,6 @@
+p {
+  z-index: abs(-15); // 15
+  z-index: ceil(5.8); //6
+  z-index: max(5, 1, 6, 8, 3); //8
+  opacity: random(); // 随机 0-1
+}

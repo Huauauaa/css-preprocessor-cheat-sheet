@@ -1,0 +1,6 @@
+@import 'c.scss';
+
+.button {
+  @include rounded;
+  padding: $radius;
+}

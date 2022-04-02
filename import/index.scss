@@ -1,0 +1,8 @@
+#main {
+  @import './common.scss';
+}
+
+@import '_a.scss';
+.container {
+  border-color: $color;
+}

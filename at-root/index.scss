@@ -1,0 +1,6 @@
+// @at-root与 & 配合使用
+.child {
+  @at-root .parent & {
+    color: #fff;
+  }
+}

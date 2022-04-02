@@ -1,0 +1,16 @@
+// scss包含很多操作颜色的函数。例如lighten()与 darken()可用于调亮或调暗颜色，opacify()使颜色透明度减少，transparent()使颜色透明度增加，mix()用来混合两种颜
+
+.p1 {
+  // 让颜色变亮
+  color: scale-color(#5c7a29, $lightness: +30%);
+}
+
+.p2 {
+  // 让颜色变暗
+  color: scale-color(#5c7a29, $lightness: -15%);
+}
+
+.p3 {
+  // 降低颜色透明度
+  color: scale-color(#5c7a29, $alpha: -40%);
+}
