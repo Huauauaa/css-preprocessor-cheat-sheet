@@ -1,0 +1,13 @@
+.child1 {
+  color: pink;
+  .parent1 & {
+    font-size: 12px;
+  }
+}
+
+.child2 {
+  width: 10px;
+  @at-root .parent2 & {
+    color: #fff;
+  }
+}
